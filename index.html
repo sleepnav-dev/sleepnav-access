@@ -62,6 +62,10 @@
   button.again{background:none;border:none;padding:0;cursor:pointer;font-family:'Public Sans',sans-serif;font-size:13.5px;color:#76837c;text-decoration:underline;text-underline-offset:2px}
   .hidden{display:none}
   @media(max-width:560px){h1{font-size:34px}body{padding:32px 20px}}
+  /* tablet: keep copy + form side by side (e.g. iPad portrait ~768px) so the
+     form stays beside the copy instead of wrapping below it, and the form
+     column grows to fill the width rather than leaving a dead band */
+  @media(min-width:561px) and (max-width:980px){.wrap{gap:28px}.col-left{flex:1.2 1 320px;min-width:300px}.col-right{flex:1 1 300px;min-width:280px}}
 </style>
 </head>
 <body>
